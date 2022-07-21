@@ -1,11 +1,10 @@
-let inputElem = document.querySelector('.only_input')
-
 export function getInputElement() {
+    let inputElem = document.querySelector('input')
     console.dir(inputElem)
 }
 getInputElement()
-let titleElem = document.querySelector('.title')
 export function getTitleElement(){
+    let titleElem = document.querySelector('.title')
     console.dir(titleElem)
 }
 getTitleElement()
