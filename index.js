@@ -14,10 +14,14 @@ export const tasks = [
 //  */
 const renderTasks = tasksList => {
     const tasksLis = document.querySelector('.list');
-
-    const  listItemsElems = tasksList.map(({text, done}) => {
+    const  listItemsElems = tasksList
+        .sort((a, b) => a.done - b.done)
+        .map(({ text, done}) => {
         const listsItemElem = document.createElement('li');
         listsItemElem.classList.add('list__item');
+        if (done) {
+            listsItemElem.classList.add('list__item_done')
+        }
         const checkboxElem = document.createElement('input');
         checkboxElem.setAttribute('type', 'checkbox');
         checkboxElem.checked = done
