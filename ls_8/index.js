@@ -1,5 +1,5 @@
 export function createButton(buttonText){
-   let res = document.createElement("button").textContent
-    res.append(buttonText)
-
+    const elem = document.createElement("button").append('body')
+    elem.textContent = `<button>${buttonText}</button>`
 }
+
