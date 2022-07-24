@@ -29,4 +29,4 @@ const renderTasks = tasksList => {
     tasksLis.append(...listItemsElems)
 
 };
-// renderTasks((tasks))
+renderTasks(tasks)
