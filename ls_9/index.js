@@ -1,12 +1,15 @@
 export function finishList() {
-  const createElem = document.createElement('li');
+  const createSixElem = document.createElement('li');
+  const createFourElem = document.createElement('li');
+  const createOneElem = document.createElement('li');
 
-  createElem.textContent = '1';
-  document.querySelector('.list').prepend(createElem);
-  createElem.textContent = '4';
-  document.querySelector('.special').before(createElem);
-  createElem.textContent = '6';
-  document.querySelector('.special').after(createElem);
-  createElem.textContent = '8';
-  document.querySelector('.list').append(createElem);
+  createOneElem.textContent = '1';
+  document.querySelector('.list').prepend(createOneElem);
+  createFourElem.textContent = '4';
+  document.querySelector('.special').before(createFourElem);
+  createSixElem.textContent = '6';
+  document.querySelector('.special').after(createSixElem);
+  const createEightElem = document.createElement('li');
+  createEightElem.textContent = '8';
+  document.querySelector('.list').append(createEightElem);
 }
